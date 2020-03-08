@@ -1,0 +1,58 @@
+CR: 
+Plik z pytaniami moze byc przechowywany w lepszym formacie
+spr format json (do C++ nie bardzo się nadaje) lub csv (domysny format danych dla badaczy) lub xml (duzo zabawy)
+przyklad dla csv 1 pytania
+
+Typ zmiennych o nazwie float przechowuje:,liczby calkowite,napisy,liczby zmiennoprzecinkowe,pojedyncze znaki,c
+
+
+pytania.h
+zmienne nie powiny byc publiczne dobrze jest uzyc getterow i setterow
+nazwy zmiennych pisz po angielsku
+string question ...
+
+nie ograniczaj sie do pytan tylko z abcd
+co gdyby ktos chcial zadac pytanie tak lub nie?
+uzyj patternu (wzorca projektowego) strategi lub poszedl bym dalej z fabryka abstrakcyjna (mozna ten pattern zapamietac jak pattern do wybierania motywu do menu w grach lub apk)
+
+klasa bazowa
+
+CQuestion {
+}
+CMultipleQuestion : CQuesetion { //chyba po : pisalo sie dziedziczenie
+odpowiedzi z abcd
+}
+CBooleanQuestion : CQuestion { lub CTrueFalseQuestion
+}
+
+nazewnictwo plikow i klas
+konwenscja w C jak dobrze pamietam to z duzych liter i uzywaj eng
+
+klasa pytani nie powinna miec tyle odpowiedzialnosci
+zrob klase ktora bedzie przechowywac informacje o odpowiedziach (sprawdzaniu czy ktos dobrze odpowiedzial)
+
+podliczanie ilosci poprawnych odp moze/powino znajdowac sie po podaniu wszystkich odp (normalnie najpierw jest egzamin podajesz odp a dopiero potem prof spr)
+
+
+metody sa troszke skaplikowane przez format pliku np wczytaj
+wzor (nr_pytania-1)*6+1; jest super magiczny :) 
+
+sposob nazywania zmiennych aktualny_nr jest ok ale lepiej jest uzyc currentNumber (po eng i camel case)
+
+nr_linii+1 mozna to zapisac jako stala
+FIRST_ANSWER_LINE = nr_linii+1
+powoduje to tyle ze program nie bedzie tego liczyl przy kazdej petli
+
+przy metodzie zadaj
+co jesli pojawi sie 20 odp? 
+bedziesz dodawac kolejne linie? 
+dobrze pomyslec o innej struktorze danych Array, List, Set, Map pomysl ktora bedzie najlepsza ;)
+jak wybierzesz uzyj petli
+
+mmetoda sprawdz
+jesli jest to mozliwe nie rob klas ktore beda modyfikowane
+lepiej by bylo zeby metoda przyjmowala parametr jak ktos odp i zwrocila info czy popranie czy nie
+
+boolean isCorrectAnswer(Answer answer) {
+    return answer.getAnswer() == this./-> getCorrectAnswer()
+}
