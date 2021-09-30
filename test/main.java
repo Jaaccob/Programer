@@ -10,6 +10,7 @@ public class main {
         school.addStudent(student2);
         school.addStudent(student3);
         school.addTeacher(teacher1);
+        school.addStudent(student1);
 
         school.print();
         school.money();
