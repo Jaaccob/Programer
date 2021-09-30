@@ -4,6 +4,11 @@ public class School {
     private ArrayList<Student> studentList;
     private ArrayList<Teacher> teacherList;
 
+    public School() {
+        this.studentList = new ArrayList<>();
+        this.teacherList = new ArrayList<>();
+    }
+
     public boolean addStudent(Student student) {
         try {
             studentList.add(student);
