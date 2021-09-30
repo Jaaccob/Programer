@@ -12,6 +12,6 @@ public class main {
         school.addTeacher(teacher1);
 
         school.print();
-
+        school.money();
     }
 }

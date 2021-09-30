@@ -1,3 +1,16 @@
+/**
+ * Obiekt <code>Student</code> reprezentuje ucznia w szkole podstawowej.
+ * Obiekt przejmuje właściowści po <code>Person</code>.
+ * Obiekt jest reprezentowany dodakowo przez 3 parametry:
+ * <code>classNumber</code> - reprezentuje number klasy
+ * <code>classGroup</code> - reprezentuje grupę klasy
+ * <code>id</code> - reprezentuje identyfikator ucznia
+ *
+ * @author Jacob
+ * @version 1.0
+ * @see Person
+ */
+
 public class Student extends Person {
     private int classNumber;
     private String classGroup;
@@ -40,10 +53,20 @@ public class Student extends Person {
         super.setPesel(pesel);
     }
 
+    /**
+     * Zwraca numer identyfikacyjny ucznia
+     *
+     * @return zwraca numer identyfikacyjny ucznia
+     */
     public String getId() {
         return this.id;
     }
 
+    /**
+     * Ustawia numer identyfikacyjny ucznia w systemie
+     *
+     * @return zwraca number identyfikacyjny
+     */
     public String setId() {
         return "s" + getPesel();
     }
