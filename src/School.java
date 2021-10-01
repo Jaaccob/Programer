@@ -4,10 +4,10 @@ import java.util.ArrayList;
  * Obiekt <code>School</code> reprezentuje szkołę podstawową.
  * Obiekt jest reprezentowany przez 4 parametry:
  *
- * <code>studentList</code> - reprezentuje listę uczniów w szkole
- * <code>teacherList</code> - reprezentuje listę nauczycieli w szkole
- * <code>totalMoneyEarned</code> - reprezentuje całkowitą kwotę zarabianą przez szkołę
- * <code>totalMoneySpent</code> - reprezentuje całkowitą kwotę wydatków przez szkołę
+ * <code>studentList</code> - reprezentuje listę uczniów w szkole<br>
+ * <code>teacherList</code> - reprezentuje listę nauczycieli w szkole<br>
+ * <code>totalMoneyEarned</code> - reprezentuje całkowitą kwotę zarabianą przez szkołę<br>
+ * <code>totalMoneySpent</code> - reprezentuje całkowitą kwotę wydatków przez szkołę<br>
  *
  * @author Jacob
  * @version 1.0
