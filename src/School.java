@@ -27,7 +27,7 @@ public class School {
      * Metoda odpowiedzialna za dodawanie nowych uczniów do listy uczniów szkoły podstawowej.
      * Metoda sprawdza czy uczeń już się nie znajduje w systemie.
      *
-     * @param student - nowy uczeń
+     * @param student nowy uczeń
      * @return true jeśli uczeń nie jest jeszcze w systemie, false jeśli uczeń już znajduje się w systemie
      */
     public boolean addStudent(Student student) {
@@ -51,7 +51,7 @@ public class School {
      * Metoda odpowiedzialna za dodawanie nowych uczniów do listy nauczycieli szkoły podstawowej.
      * Metoda sprawdza czy nauczyciel już się nie znajduje w systemie.
      *
-     * @param teacher - nowy nauczyciel
+     * @param teacher nowy nauczyciel
      * @return true jeśli nauczyciel nie jest jeszcze w systemie, false jeśli nauczyciel już znajduje się w systemie
      */
     public boolean addTeacher(Teacher teacher) {

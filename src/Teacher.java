@@ -42,36 +42,6 @@ public class Teacher extends Person {
         this.id = "t" + getPesel();
     }
 
-    @Override
-    public String getName() {
-        return super.getName();
-    }
-
-    @Override
-    public void setName(String name) {
-        super.setName(name);
-    }
-
-    @Override
-    public String getLastName() {
-        return super.getLastName();
-    }
-
-    @Override
-    public void setLastName(String lastName) {
-        super.setLastName(lastName);
-    }
-
-    @Override
-    public String getPesel() {
-        return super.getPesel();
-    }
-
-    @Override
-    public void setPesel(String pesel) {
-        super.setPesel(pesel);
-    }
-
     /**
      * Zwraca numer identyfikacyjny nauczyciela
      *
@@ -107,4 +77,36 @@ public class Teacher extends Person {
     public void setSalary(double salary) {
         this.salary = salary;
     }
+
+    @Override
+    public String getName() {
+        return super.getName();
+    }
+
+    @Override
+    public void setName(String name) {
+        super.setName(name);
+    }
+
+    @Override
+    public String getLastName() {
+        return super.getLastName();
+    }
+
+    @Override
+    public void setLastName(String lastName) {
+        super.setLastName(lastName);
+    }
+
+    @Override
+    public String getPesel() {
+        return super.getPesel();
+    }
+
+    @Override
+    public void setPesel(String pesel) {
+        super.setPesel(pesel);
+    }
 }
+
+

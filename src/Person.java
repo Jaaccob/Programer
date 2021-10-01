@@ -1,8 +1,8 @@
 /**
  * Obiekt <code>Person</code> reprezentuje osobę w szkole podstawowej.
- * Obiekt jest reprezentowany przez 3 parametry:
- * <code>name</code> - reprezentuje imię osoby
- * <code>lastname</code> - reprezentuje nazwisko osoby
+ * Obiekt jest reprezentowany przez 3 parametry:<br>
+ * <code>name</code> - reprezentuje imię osoby<br>
+ * <code>lastname</code> - reprezentuje nazwisko osoby<br>
  * <code>pesel</code> - reprezentuje pesel osoby
  *
  * @author Jacob

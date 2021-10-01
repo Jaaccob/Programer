@@ -23,6 +23,29 @@ public class Student extends Person {
         this.id = this.setId();
     }
 
+    public Student(String name, String lastName, String pesel) {
+        super(name, lastName, pesel);
+        this.id = this.setId();
+    }
+
+    /**
+     * Zwraca numer identyfikacyjny ucznia
+     *
+     * @return zwraca numer identyfikacyjny ucznia
+     */
+    public String getId() {
+        return this.id;
+    }
+
+    /**
+     * Ustawia numer identyfikacyjny ucznia w systemie
+     *
+     * @return zwraca number identyfikacyjny
+     */
+    public String setId() {
+        return "s" + getPesel();
+    }
+
     @Override
     public String getName() {
         return super.getName();
@@ -53,21 +76,5 @@ public class Student extends Person {
         super.setPesel(pesel);
     }
 
-    /**
-     * Zwraca numer identyfikacyjny ucznia
-     *
-     * @return zwraca numer identyfikacyjny ucznia
-     */
-    public String getId() {
-        return this.id;
-    }
 
-    /**
-     * Ustawia numer identyfikacyjny ucznia w systemie
-     *
-     * @return zwraca number identyfikacyjny
-     */
-    public String setId() {
-        return "s" + getPesel();
-    }
 }
